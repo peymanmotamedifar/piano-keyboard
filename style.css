@@ -1,0 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  transform-style: preserve-3d;
+}
+section .top3 {
+  width: 1439px;
+  height: 200px;
+  background-color: rgb(34, 34, 34);
+  border: 5px solid black;
+  transform: perspective(800px) translate3d(0px, 5px, 26px);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 0 150px;
+}
+section .top3 > div:nth-of-type(1) {
+  transform: translateX(-160px);
+  display: flex;
+  align-items: center;
+}
+section .top3 > div:nth-of-type(1) img {
+  width: 180px;
+  transform: translateY(-20px);
+}
+section .top3 > div:nth-of-type(1) div button {
+  box-shadow: 4px 4px 5px rgba(57, 57, 57, 0.674);
+  width: 80px;
+  height: 70px;
+  border: 2px solid rgb(137, 137, 137);
+  background-color: #3b4245;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgb(174, 194, 214);
+  padding: 5px 0;
+  transform: translate(100px, -22px);
+}
+section .top3 > div:nth-of-type(1) div button #play {
+  fill: rgb(60, 209, 60);
+}
+section .top3 > div:nth-of-type(1) div button #stop {
+  fill: rgb(236, 40, 40);
+}
+section .top3 > div:nth-of-type(1) div button:hover {
+  cursor: pointer;
+}
+section .top3 > div:nth-of-type(1) div button:active {
+  transform: translate(100px, -22px) scale(0.95);
+}
+section .top3 ._display > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 130px;
+  border: 2px solid wheat;
+  background-color: rgb(171, 220, 231);
+  border: 25px solid black;
+  font-family: "Orbitron", sans-serif;
+}
+section .top3 .metro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+section .top3 .metro > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section .top3 .metro > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+section .top3 .metro > div > div .metroOnOf {
+  box-shadow: 4px 4px 5px rgba(57, 57, 57, 0.674);
+  width: 80px;
+  height: 70px;
+  border: 2px solid rgb(137, 137, 137);
+  background-color: #3b4245;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section .top3 .metro > div > div .metroOnOf:hover {
+  cursor: pointer;
+}
+section .top3 .metro > div > div .metroOnOf > span:nth-of-type(1) {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.292);
+  border-radius: 50%;
+  background-color: rgb(202, 50, 50);
+  margin-top: 10px;
+}
+section .top3 .metro > div > div .metroOnOf > span:nth-of-type(2) {
+  width: 100%;
+  font-size: 14px;
+  color: rgb(174, 194, 214);
+}
+section .top3 .metro #demoInput {
+  display: none;
+}
+section .top3 .metro .vol {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  margin: 0 5px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(123, 167, 174);
+}
+section .top3 .metro .vol:hover {
+  cursor: pointer;
+}
+section .top3 .metro .vol:active {
+  transform: scale(0.96);
+}
+section .top3 .metro .tempo {
+  font-size: 16px;
+}
+section .top2 {
+  width: 1420px;
+  height: 65px;
+  background-color: rgb(34, 34, 34);
+  transform-origin: bottom;
+  transform: perspective(800px) rotateX(-35deg);
+  color: rgb(224, 224, 224);
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  align-items: center;
+  font-size: 48px;
+  font-family: "Tangerine", cursive;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 2px solid black;
+}
+section .top1 {
+  width: 1280px;
+  height: 20px;
+  background-color: rgb(19, 19, 19);
+  display: flex;
+}
+section .top1 span {
+  width: 20px;
+  margin: 0 1px;
+  height: 50%;
+  transition: 0.1s;
+}
+section .d {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .d .dp {
+  transform-style: preserve-3d;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  color: rgba(37, 37, 37, 0.913);
+  display: flex;
+}
+section .d .dp span {
+  width: 70px;
+  height: 275px;
+  background-color: rgb(34, 34, 34);
+  transform: translate3d(0px, -20px, 1px);
+}
+section .d .dp span:nth-of-type(1) {
+  border-left: 5px solid black;
+  border-bottom: 3px solid black;
+}
+section .d .dp span:nth-of-type(2) {
+  border-right: 5px solid black;
+  border-bottom: 3px solid black;
+}
+section .d .dp .Group1 {
+  stroke: rgb(45, 45, 45);
+  stroke-width: 8px;
+  width: 24px;
+  height: 152px;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  transform-origin: top;
+  transition: 0.1s;
+  transform: translateZ(10px);
+}
+section .d .dp .Group1:active {
+  transform: translateZ(1px) scale(0.95);
+  box-shadow: 5px 3px 5px rgba(57, 57, 57, 0.674);
+}
+section .d .dp .white-key1 {
+  width: 19px;
+  height: 255px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 2px 0 0 5px;
+  transform-origin: top;
+  transition: 0.1s;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  transform: perspective(1000px) translateZ(0px);
+}
+section .d .dp .white-key1:active {
+  transform: scale(0.95);
+}
+section .d .dp .white-key1 > div {
+  width: 34px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+section .d .dp .white-key2 {
+  width: 19px;
+  height: 255px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 0px 2px 5px 0;
+  transform-origin: top;
+  transition: 0.1s;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  transform: perspective(1000px) translateZ(0px) rotateX(0deg);
+}
+section .d .dp .white-key2:active {
+  transform: scale(0.95);
+}
+section .d .dp .white-key2 div:nth-of-type(1) {
+  width: 25px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+}
+section .d .dp .white-key2 div:nth-of-type(2) {
+  width: 25px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+section .d .dp .white-key3 {
+  margin-right: 3px;
+  width: 19px;
+  height: 255px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 0px 2px 5px 0;
+  transform-origin: top;
+  transition: 0.1s;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  transform: perspective(1000px) translateZ(0px) rotateX(0deg);
+}
+section .d .dp .white-key3:active {
+  transform: scale(0.95);
+}
+section .d .dp .white-key3 > div {
+  width: 34px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+section .d .dp .white-key5 {
+  width: 17px;
+  height: 255px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 0px 2px 5px 0;
+  transform-origin: top;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  transition: 0.1s;
+}
+section .d .dp .white-key5:active {
+  transform: scale(0.95);
+}
+section .d .dp .white-key5 div:nth-of-type(1) {
+  width: 23px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+}
+section .d .dp .white-key5 div:nth-of-type(2) {
+  width: 28px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+section .d .dp .white-key6 {
+  width: 18px;
+  height: 255px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 0px 2px 5px 0;
+  transform-origin: top;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  transition: 0.1s;
+}
+section .d .dp .white-key6:active {
+  transform: scale(0.95);
+}
+section .d .dp .white-key6 div:nth-of-type(1) {
+  width: 28px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+}
+section .d .dp .white-key6 div:nth-of-type(2) {
+  width: 24px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 8px 4px 4px rgba(57, 57, 57, 0.674);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+._active {
+  transform: scale(0.95) !important;
+  box-shadow: 5px 3px 5px rgba(57, 57, 57, 0.674) !important;
+}
+
+.light {
+  background-color: aqua;
+}
+
+.btnactive {
+  transform: scale(0.97);
+}
+.btnactive > span:nth-child(1) {
+  background-color: rgb(34, 251, 22) !important;
+  box-shadow: 0 0 3px 1px white;
+}/*# sourceMappingURL=style.css.map */
